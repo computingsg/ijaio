@@ -40,6 +40,93 @@
             padding: 10px;
         }
 
+        /* New Intro Card Style */
+        .intro-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-left: 5px solid #FFD700; /* Gold for importance */
+        }
+
+        .intro-card p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .intro-card ul {
+            margin: 10px 0 20px 20px;
+            list-style-type: disc;
+        }
+
+        .intro-card li {
+            margin-bottom: 8px;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+
+        /* Pilot Run Card Style */
+        .pilot-run-card {
+            background: linear-gradient(135deg, #00C853 0%, #69F0AE 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #003300; /* Dark green text for contrast */
+            box-shadow: 0 10px 30px rgba(0, 200, 83, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pilot-run-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(45deg);
+            pointer-events: none;
+        }
+
+        .pilot-run-card h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-shadow: 0 1px 2px rgba(255,255,255,0.5);
+            color: #004d00;
+        }
+
+        .pilot-run-card p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+
+        .pilot-btn {
+            display: inline-block;
+            background: #004d00;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .pilot-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            background: #006400;
+        }
+
         .logo-container {
             display: flex;
             align-items: center;
@@ -51,7 +138,7 @@
         .logo {
             width: 80px;
             height: 80px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            /* box-shadow removed for better blending */
             transition: transform 0.3s ease;
         }
 
@@ -516,12 +603,49 @@
     <div class="container">
         <div class="header">
             <div class="logo-container">
-                <img src="static/njaio_logo.jpeg" alt="NJAIOLogo" class="logo">
+                <img src="static/IJAIO_2026.png" alt="IJAIOLogo" class="logo">
                 <div class="header-text">
-                    <h1>National Junior Artificial Intelligence Olympiad</h1>
+                    <h1>International Junior Artificial Intelligence Olympiad</h1>
                     <p>Pilot for Singapore schools (19 Jan 2026 - 15 Feb 2026)</p>
                 </div>
             </div>
+        </div>
+
+        <!-- Introduction & Eligibility Card -->
+        <div class="intro-card">
+            <p style="font-weight: 600; color: #2c3e50;">
+                <i class="fas fa-graduation-cap" style="color: #667eea; margin-right: 8px;"></i>
+                Open to all secondary schools, junior colleges / centralised institute, ITE and polytechnic students (including those awaiting admission)
+            </p>
+            <p>
+                <strong>International Junior Artificial Intelligence Olympiad (IJAIO)</strong> is the rebranding of the previous National Junior Artificial Intelligence Olympiad (NJAIO) as it:
+            </p>
+            <ul>
+                <li>better reflects the international scope of the event which spans over 50 countries as at 2026</li>
+                <li>distinguishes itself from National Olympiads in Artificial Intelligence (NOAI) which caters to only high school students and is typically highly selective to a minority group</li>
+            </ul>
+            <p>
+                IJAIO aspires to be a more inclusive and accessible platform for all students (from primary to post-secondary) embarking on their AI learning journey.
+            </p>
+            <p style="margin-bottom: 0; font-style: italic; color: #718096;">
+                From the Singapore pilot run, we have been learning many valuable lessons to help us further refine and improve the outreach for the inaugural IJAIO in August 2026. Students who have participated in the pilot run will receive prioritised learning content and free access to the actual IJAIO August 2026 event. We look forward to your active participation and useful feedback!
+            </p>
+        </div>
+
+        <div class="pilot-run-card">
+            <h2><i class="fas fa-flag-checkered"></i> IJAIO Pilot Run</h2>
+            <p style="font-weight: 700; font-size: 1.3rem;">15 Feb 2026 (0800 - 2300)</p>
+            <p>A self-proctored closed book 1-hour 100-MCQ quiz.</p>
+            <p style="margin-bottom: 25px;">Ready for the challenge?</p>
+            
+            <a href="https://computing.sg/goto/ijaio26" target="_blank" class="pilot-btn">
+                <i class="fas fa-external-link-alt"></i> Visit https://computing.sg/goto/ijaio26
+            </a>
+            
+            <p style="margin-top: 25px; font-size: 1rem; opacity: 0.95; font-style: italic;">
+                E-Certificates of Commendation/Participation/Practice will be awarded.<br>
+                Happy AI learning! :)
+            </p>
         </div>
 
         <div class="cards-grid">
@@ -613,14 +737,14 @@
         <div class="card sign-up-section" style="margin-top: 30px; background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); border-left: 5px solid #ff0000; text-align: center; padding: 40px 20px;">
             <h2 style="color: white; font-size: 2.5rem; font-weight: 700; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
                 <i class="fas fa-user-plus" style="margin-right: 15px;"></i>
-                Sign up for NJAIO Pilot
+                Sign up for IJAIO Pilot
             </h2>
             <p style="color: white; font-size: 1.3rem; font-weight: 600; margin-bottom: 25px;">
                 Join thousands of students in developing your AI literacy and competencies!
             </p>
-            <a href="https://computing.sg/goto/njaiopilot" target="_blank" style="display: inline-block; background: white; color: #ff6b6b; padding: 15px 40px; font-size: 1.4rem; font-weight: 700; text-decoration: none; border-radius: 50px; box-shadow: 0 8px 25px rgba(0,0,0,0.2); transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">
+            <a href="https://computing.sg/goto/ijaiopilot" target="_blank" style="display: inline-block; background: white; color: #ff6b6b; padding: 15px 40px; font-size: 1.4rem; font-weight: 700; text-decoration: none; border-radius: 50px; box-shadow: 0 8px 25px rgba(0,0,0,0.2); transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">
                 <i class="fas fa-rocket" style="margin-right: 10px;"></i>
-                https://computing.sg/goto/njaiopilot
+                https://computing.sg/goto/ijaiopilot
             </a>
             <p style="color: rgba(255,255,255,0.9); font-size: 1rem; margin-top: 20px; font-style: italic;">
                 Registration <span style="text-decoration: line-through;">closes February 12, 2026</span> <strong>reopened due to popular request</strong> • Unlimited spots available
@@ -632,13 +756,13 @@
     <footer class="footer">
         <div class="footer-content">
             <p class="footer-text" style="word-wrap: break-word; overflow-wrap: break-word;">
-                NJAIO is a community education outreach programme by SIMCC and ComputingSG. 
+                IJAIO is a community education outreach programme by SIMCC and ComputingSG. 
                 More info at <a href="https://jaio.simcc.org" target="_blank" class="footer-link" style="word-break: break-word;">https://jaio.simcc.org</a>
             </p>
             <div class="footer-contact">
-                <a href="mailto:njaio@computing.sg" class="email-link">
+                <a href="mailto:ijaio@computing.sg" class="email-link">
                     <i class="fas fa-envelope email-icon"></i>
-                    njaio@computing.sg
+                    ijaio@computing.sg
                 </a>
             </div>
         </div>

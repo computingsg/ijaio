@@ -1,0 +1,15 @@
+# Ignore Python scripts
+*.py
+
+# Ignore text files
+*.txt
+
+# Ignore JSON files (contains quiz data)
+*.json
+
+# Ignore the quiz HTML file (contains logic and answers)
+pilot/pilotquiz.html
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
