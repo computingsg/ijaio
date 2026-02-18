@@ -37,7 +37,7 @@ For each of the 100 questions, the following processing steps are required:
 ]
 ```
 
-## 5. Frontend Application (`pilot/pilotquiz.html`)
+## 5. Frontend Application (`pilot/quiz.html`)
 An interactive HTML page to administer the quiz.
 
 ### Functional Requirements

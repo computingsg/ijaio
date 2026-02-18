@@ -12,7 +12,7 @@
 
 ## Phase 2: Frontend Development
 
-- [ ] **Task 2.1**: Create the basic HTML structure for `pilot/pilotquiz.html`. <!-- id: 7 -->
+- [ ] **Task 2.1**: Create the basic HTML structure for `pilot/quiz.html`. <!-- id: 7 -->
 - [ ] **Task 2.2**: Implement CSS styling for the quiz interface (layout, option cards, feedback states). <!-- id: 8 -->
 - [ ] **Task 2.3**: Implement JavaScript to load `ijaio26pilot.json` and render the first question. <!-- id: 9 -->
 - [ ] **Task 2.4**: Implement interaction logic (click handling, correct/incorrect validation, class toggling). <!-- id: 10 -->
